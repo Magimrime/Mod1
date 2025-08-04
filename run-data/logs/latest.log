@@ -1,34 +1,29 @@
-[03Aug2025 20:32:58.525] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\ferry\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, oliveforgemod, --all, --output, D:\My Forge Mod\Mods\CleanMod\src\generated\resources, --existing, D:\My Forge Mod\Mods\CleanMod\src\main\resources]
-[03Aug2025 20:32:58.529] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.7+6-LTS
-[03Aug2025 20:32:58.532] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.7 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[03Aug2025 20:32:58.766] [main/WARN] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Configuration file D:\My Forge Mod\Mods\CleanMod\run-data\config\fml.toml is not correct. Correcting
-[03Aug2025 20:32:58.768] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSkipGLVersions] was corrected from null to []
-[03Aug2025 20:32:58.769] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowLogHelpMessage] was corrected from null to true
-[03Aug2025 20:32:58.769] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowSquir] was corrected from null to false
-[03Aug2025 20:32:58.770] [main/INFO] [net.minecraftforge.fml.loading.FMLConfig/CORE]: Incorrect key [earlyWindowShowCPU] was corrected from null to false
-[03Aug2025 20:32:58.795] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
-[03Aug2025 20:32:59.017] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/ferry/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
-[03Aug2025 20:33:00.610] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[03Aug2025 20:33:02.530] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\ferry\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, oliveforgemod, --all, --output, D:\My Forge Mod\Mods\CleanMod\src\generated\resources, --existing, D:\My Forge Mod\Mods\CleanMod\src\main\resources]
-[03Aug2025 20:33:14.274] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
-[03Aug2025 20:33:14.278] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
-[03Aug2025 20:33:14.316] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
-[03Aug2025 20:33:15.763] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [oliveforgemod]
-[03Aug2025 20:33:15.912] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/ferry/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
-[03Aug2025 20:33:15.913] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/ferry/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
-[03Aug2025 20:33:16.258] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[03Aug2025 20:33:16.713] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 453 ms
-[03Aug2025 20:33:16.713] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[03Aug2025 20:33:16.715] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 1 ms
-[03Aug2025 20:33:16.716] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id oliveforgemod
-[03Aug2025 20:33:16.757] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id oliveforgemod finished after 39 ms
-[03Aug2025 20:33:16.757] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id oliveforgemod
-[03Aug2025 20:33:16.776] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id oliveforgemod finished after 16 ms
-[03Aug2025 20:33:16.776] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: oliveforgemod
-[03Aug2025 20:33:16.776] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: oliveforgemod finished after 0 ms
-[03Aug2025 20:33:16.776] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: oliveforgemod
-[03Aug2025 20:33:16.777] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: oliveforgemod finished after 0 ms
-[03Aug2025 20:33:16.778] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[03Aug2025 20:33:17.129] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 353 ms
-[03Aug2025 20:33:17.129] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 875 ms
-[03Aug2025 20:33:17.171] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 10, old count: 0, new count: 11, removed stale: 0, written: 10
+[03Aug2025 20:48:13.723] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forge_userdev_data, --assetIndex, 17, --assetsDir, C:\Users\ferry\.gradle\caches\forge_gradle\assets, --gameDir, ., --mod, oliveforgemod, --all, --output, D:\My Forge Mod\Mods\Mod1\V1\src\generated\resources, --existing, D:\My Forge Mod\Mods\Mod1\V1\src\main\resources]
+[03Aug2025 20:48:13.729] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.7+6-LTS
+[03Aug2025 20:48:13.733] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.2.1 starting: java version 21.0.7 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[03Aug2025 20:48:13.919] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forge_userdev_data
+[03Aug2025 20:48:14.121] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=jar:file:///C:/Users/ferry/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.7/8ab114ac385e6dbdad5efafe28aba4df8120915f/mixin-0.8.7.jar!/ Service=ModLauncher Env=UNKNOWN
+[03Aug2025 20:48:15.625] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[03Aug2025 20:48:16.838] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forge_userdev_data' with arguments [--gameDir, ., --assetsDir, C:\Users\ferry\.gradle\caches\forge_gradle\assets, --assetIndex, 17, --mod, oliveforgemod, --all, --output, D:\My Forge Mod\Mods\Mod1\V1\src\generated\resources, --existing, D:\My Forge Mod\Mods\Mod1\V1\src\main\resources]
+[03Aug2025 20:48:24.265] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 51.0.33, for MC 1.21 with MCP 20240613.102039
+[03Aug2025 20:48:24.268] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v51.0.33 Initialized
+[03Aug2025 20:48:24.309] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Opening jdk.naming.dns/com.sun.jndi.dns to java.naming
+[03Aug2025 20:48:25.236] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [oliveforgemod]
+[03Aug2025 20:48:25.357] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/ferry/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/assets/.mcassetsroot' uses unexpected schema
+[03Aug2025 20:48:25.358] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/ferry/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.21-51.0.33_mapped_parchment_2024.07.28-1.21/forge-1.21-51.0.33_mapped_parchment_2024.07.28-1.21-recomp.jar%230!/data/.mcassetsroot' uses unexpected schema
+[03Aug2025 20:48:25.633] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[03Aug2025 20:48:25.838] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 205 ms
+[03Aug2025 20:48:25.840] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[03Aug2025 20:48:25.840] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 1 ms
+[03Aug2025 20:48:25.842] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id oliveforgemod
+[03Aug2025 20:48:25.874] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id oliveforgemod finished after 31 ms
+[03Aug2025 20:48:25.874] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id oliveforgemod
+[03Aug2025 20:48:25.878] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id oliveforgemod finished after 2 ms
+[03Aug2025 20:48:25.878] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: oliveforgemod
+[03Aug2025 20:48:25.878] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: oliveforgemod finished after 0 ms
+[03Aug2025 20:48:25.878] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: oliveforgemod
+[03Aug2025 20:48:25.879] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: oliveforgemod finished after 0 ms
+[03Aug2025 20:48:25.879] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[03Aug2025 20:48:26.087] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 209 ms
+[03Aug2025 20:48:26.089] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 455 ms
+[03Aug2025 20:48:26.094] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 10, old count: 10, new count: 11, removed stale: 0, written: 0
