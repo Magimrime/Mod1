@@ -30,8 +30,14 @@ public class ModItemTagProvider extends ItemTagsProvider {
 
         tag(ItemTags.TRIM_TEMPLATES);
 
-        tag(ItemTags.LOGS_THAT_BURN);
+        tag(ItemTags.LOGS_THAT_BURN)
+                .add(ModBlocks.WALNUT_LOG.get().asItem())
+                .add(ModBlocks.WALNUT_WOOD.get().asItem())
+                .add(ModBlocks.STRIPPED_WALNUT_LOG.get().asItem())
+                .add(ModBlocks.STRIPPED_WALNUT_WOOD.get().asItem());
 
-        tag(ItemTags.PLANKS);
+        tag(ItemTags.PLANKS)
+                .add(ModBlocks.WALNUT_PLANKS.get().asItem());
+
     }
 }

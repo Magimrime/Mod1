@@ -34,6 +34,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        basicItem(ModItems.WALNUT.get());
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

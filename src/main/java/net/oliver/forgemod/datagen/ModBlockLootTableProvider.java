@@ -43,6 +43,17 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        this.dropSelf(ModBlocks.WALNUT_LOG.get());
+        this.dropSelf(ModBlocks.WALNUT_WOOD.get());
+        this.dropSelf(ModBlocks.STRIPPED_WALNUT_LOG.get());
+        this.dropSelf(ModBlocks.STRIPPED_WALNUT_WOOD.get());
+        this.dropSelf(ModBlocks.WALNUT_PLANKS.get());
+        this.dropSelf(ModBlocks.WALNUT_SAPLING.get());
+
+
+        this.add(ModBlocks.WALNUT_LEAVES.get(), block ->
+                createWalnutLeavesDrops(block, ModBlocks.WALNUT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
+
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
@@ -54,6 +65,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                                 .apply(ApplyBonusCount.addOreBonusCount(registrylookup.getOrThrow(Enchantments.FORTUNE)))
                 )
         );
+
     }
 
     protected LootTable.Builder createMultipeOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
@@ -98,5 +110,23 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     @Override
     protected Iterable<Block> getKnownBlocks() {
         return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+    }
+
+    protected LootTable.Builder createWalnutLeavesDrops(Block pWalnutLeavesBlock, Block pSaplingBlock, float... pChances) {
+        HolderLookup.RegistryLookup<Enchantment> registrylookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
+        return this.createLeavesDrops(pWalnutLeavesBlock, pSaplingBlock, pChances)
+                .withPool(
+                        LootPool.lootPool()
+                                .setRolls(ConstantValue.exactly(1.0F))
+                                .when(this.doesNotHaveSilkTouch())
+                                .add(
+                                        ((LootPoolSingletonContainer.Builder)this.applyExplosionCondition(pWalnutLeavesBlock, LootItem.lootTableItem(ModItems.WALNUT.get())))
+                                                .when(
+                                                        BonusLevelTableCondition.bonusLevelFlatChance(
+                                                                registrylookup.getOrThrow(Enchantments.FORTUNE), 0.0525F, 0.075F, 0.09F, 0.125F
+                                                        )
+                                                )
+                                )
+                );
     }
 }

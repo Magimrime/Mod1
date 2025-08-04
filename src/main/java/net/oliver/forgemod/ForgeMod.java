@@ -1,6 +1,7 @@
 package net.oliver.forgemod;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -21,6 +22,8 @@ import net.oliver.forgemod.item.ModItems;
 import net.oliver.forgemod.loot.ModLootModifiers;
 import net.oliver.forgemod.potion.ModPotions;
 import net.oliver.forgemod.sound.ModSounds;
+import net.oliver.forgemod.worldgen.biome.ModBiomes;
+import net.oliver.forgemod.worldgen.biome.ModTerrablender;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -52,6 +55,8 @@ public class ForgeMod {
 
         ModLootModifiers.register(modEventBus);
 
+        ModTerrablender.registerBiomes();
+
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
         //Register our mod's ForgeConfigSpec so that Forge can create and load the config file for us
@@ -60,6 +65,7 @@ public class ForgeMod {
 
     private void commonSetup(final FMLCommonSetupEvent event) {
         event.enqueueWork(() -> {
+            ComposterBlock.COMPOSTABLES.put(ModItems.WALNUT.get(),0.6f);
         });
     }
 

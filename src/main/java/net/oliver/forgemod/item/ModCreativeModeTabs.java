@@ -16,7 +16,22 @@ public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ForgeMod.MOD_ID);
 
-    public static void register(IEventBus eventBus) {
-        CREATIVE_MODE_TABS.register(eventBus);
+    public static final RegistryObject<CreativeModeTab> WALNUT_TAB = CREATIVE_MODE_TABS.register("walnut_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.WALNUT.get()))
+                    .title(Component.translatable("creativetab.oliveforgemod.walnut"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.WALNUT.get());
+
+                        output.accept(ModBlocks.WALNUT_LOG.get());
+                        output.accept(ModBlocks.WALNUT_WOOD.get());
+                        output.accept(ModBlocks.STRIPPED_WALNUT_LOG.get());
+                        output.accept(ModBlocks.STRIPPED_WALNUT_WOOD.get());
+
+                        output.accept(ModBlocks.WALNUT_PLANKS.get());
+                        output.accept(ModBlocks.WALNUT_SAPLING.get());
+                    }).build());
+
+    public static void register (IEventBus eventBus){
+                            CREATIVE_MODE_TABS.register(eventBus);
     }
 }
