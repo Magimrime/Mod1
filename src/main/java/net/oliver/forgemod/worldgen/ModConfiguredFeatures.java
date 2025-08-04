@@ -32,8 +32,6 @@ import java.util.List;
 public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> WALNUT_KEY = registerKey("acacia_like");
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> NIGHT_BERRY_BUSH_KEY = registerKey("night_berry_bush");
-
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -53,6 +51,7 @@ public class ModConfiguredFeatures {
                         0,
                         2)).build()); //Extra foliage height
     }
+
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey(String name) {
         return ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID, name));
     }

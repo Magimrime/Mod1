@@ -13,8 +13,8 @@ import terrablender.api.RegionType;
 import java.util.function.Consumer;
 
 public class ModOverworldRegion extends Region {
-    public ModOverworldRegion(ResourceLocation name, int weight) {
-        super(name, RegionType.OVERWORLD, weight);
+    public ModOverworldRegion(ResourceLocation name) {
+        super(name, RegionType.OVERWORLD, 5);
     }
 
     @Override

@@ -25,7 +25,7 @@ public class ModPlacedFeatures {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, WALNUT_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.WALNUT_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2,0.1f,1),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3,0.1f,2),
                         ModBlocks.WALNUT_SAPLING.get()));
     }
 

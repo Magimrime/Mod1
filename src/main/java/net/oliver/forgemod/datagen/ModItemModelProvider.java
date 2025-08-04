@@ -35,6 +35,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(ModItems.WALNUT.get());
+        saplingItem(ModBlocks.WALNUT_SAPLING);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

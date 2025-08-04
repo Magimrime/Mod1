@@ -1,3 +1,5 @@
-// 1.21	2025-08-04T11:20:22.7853286	Registries
+// 1.21	2025-08-04T16:31:01.9061399	Registries
+3ca647b37b6ad5590daee1d8d45b137d625e283c data/oliveforgemod/forge/biome_modifier/add_tree_walnut.json
+e2b11d3d71eb78f2be976c13cf2cde9ca396655d data/oliveforgemod/worldgen/biome/walnut_biome.json
 7ea632a55de754c10a149a8285ac86961f609491 data/oliveforgemod/worldgen/configured_feature/acacia_like.json
-06a7b1c75710bcf7113453ea8ee8509773a7405e data/oliveforgemod/worldgen/placed_feature/walnut_placed.json
+45d5c5112d99b5496943ebf9b251471649caffc8 data/oliveforgemod/worldgen/placed_feature/walnut_placed.json
