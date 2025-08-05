@@ -10,12 +10,12 @@ import net.oliver.forgemod.entity.custom.SnailEntity;
 
 public class SnailRenderer extends MobRenderer<SnailEntity, SnailModel<SnailEntity>> {
     public SnailRenderer(EntityRendererProvider.Context pContext) {
-        super(pContext, new SnailModel<>(pContext.bakeLayer(SnailModel.LAYER_LOCATION)), 0.1f);
+        super(pContext, new SnailModel<>(pContext.bakeLayer(SnailModel.LAYER_LOCATION)), 0.4f);
     }
 
     @Override
     public ResourceLocation getTextureLocation(SnailEntity pEntity) {
-        return ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID,"textures/entity/sandsnail/snail.png");
+        return ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID,"textures/entity/dirtsnail/snail.png");
     }
 
     @Override

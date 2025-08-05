@@ -14,7 +14,7 @@ import net.oliver.forgemod.entity.custom.SnailEntity;
 
 public class SnailModel<T extends SnailEntity> extends HierarchicalModel<T> {
     public static final ModelLayerLocation LAYER_LOCATION =
-            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID, "sandsnail"), "main");
+            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID, "snail"), "main");
     private final ModelPart FullBody;
     private final ModelPart Middle;
 

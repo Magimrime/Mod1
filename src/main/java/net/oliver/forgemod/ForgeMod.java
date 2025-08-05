@@ -53,7 +53,6 @@ public class ForgeMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-
         ModSounds.register(modEventBus);
 
         ModEffects.register(modEventBus);

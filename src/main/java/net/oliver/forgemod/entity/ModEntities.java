@@ -15,7 +15,7 @@ public class ModEntities {
 
     public static final RegistryObject<EntityType<SnailEntity>> SNAIL =
             ENTITY_TYPES.register("snail", () -> EntityType.Builder.of(SnailEntity::new, MobCategory.CREATURE)
-                    .sized(0.35f, 0.35f).build("snail"));
+                    .sized(0.4f, 0.4f).build("snail"));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
