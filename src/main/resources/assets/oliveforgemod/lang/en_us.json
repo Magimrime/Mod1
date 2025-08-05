@@ -10,5 +10,7 @@
 
   "block.oliveforgemod.walnut_sapling": "Walnut Sapling",
   "terrablender_deferred_placeholder": "walnut_forest",
-  "creativetab.oliveforgemod.walnut": "Walnuts"
+  "creativetab.oliveforgemod.walnut": "Walnuts",
+
+  "item.oliveforgemod.snail_spawn_egg": "Snail Spawn Egg"
 }

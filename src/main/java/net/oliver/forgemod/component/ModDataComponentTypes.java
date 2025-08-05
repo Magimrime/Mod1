@@ -13,3 +13,4 @@ import java.util.function.UnaryOperator;
 
 public class ModDataComponentTypes {
     }
+

@@ -9,13 +9,10 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.minecraft.world.level.levelgen.feature.VegetationPatchFeature;
 import net.minecraft.world.level.levelgen.placement.*;
-import net.minecraftforge.fml.common.Mod;
 import net.oliver.forgemod.ForgeMod;
 import net.oliver.forgemod.block.ModBlocks;
 
-import java.security.PublicKey;
 import java.util.List;
 
 public class ModPlacedFeatures {
@@ -25,8 +22,9 @@ public class ModPlacedFeatures {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         register(context, WALNUT_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.WALNUT_KEY),
-                VegetationPlacements.treePlacement(PlacementUtils.countExtra(3,0.1f,2),
+                VegetationPlacements.treePlacement(PlacementUtils.countExtra(2,0.1f,1),
                         ModBlocks.WALNUT_SAPLING.get()));
+
     }
 
     private static ResourceKey<PlacedFeature> registerKey(String name) {

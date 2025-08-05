@@ -36,6 +36,7 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.WALNUT.get());
         saplingItem(ModBlocks.WALNUT_SAPLING);
+        withExistingParent(ModItems.SNAIL_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
