@@ -1,9 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": [
-    "minecraft:plains",
-    "minecraft:savanna"
-  ],
+  "biomes": "oliveforgemod:walnut_biome",
   "features": "oliveforgemod:walnut_placed",
   "step": "vegetal_decoration"
 }

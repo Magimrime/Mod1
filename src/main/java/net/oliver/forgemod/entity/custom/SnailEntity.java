@@ -4,13 +4,13 @@ import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.resources.ResourceKey;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
+import net.minecraft.world.DifficultyInstance;
 import net.minecraft.world.damagesource.DamageSource;
-import net.minecraft.world.entity.AgeableMob;
-import net.minecraft.world.entity.AnimationState;
-import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.*;
@@ -18,8 +18,14 @@ import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.ServerLevelAccessor;
+import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.fml.common.Mod;
 import net.oliver.forgemod.entity.ModEntities;
 import net.oliver.forgemod.item.ModItems;
+import net.oliver.forgemod.worldgen.biome.ModBiomes;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.ArrayList;
@@ -32,6 +38,7 @@ public class SnailEntity extends Animal {
     public final AnimationState uncurlAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
     private int panicTicks = 0;
+    private boolean shouldPeek = false;
     private static final EntityDataAccessor<Boolean> IS_PANICKED = SynchedEntityData.defineId(SnailEntity.class, EntityDataSerializers.BOOLEAN);
     private final List<Goal> storedGoals = new ArrayList<>(); // Store goals when curled
 
@@ -88,6 +95,11 @@ public class SnailEntity extends Animal {
         } else {
             --this.idleAnimationTimeout;
         }
+
+        // Don't run idle animation when panicked
+        if (this.isPanicked()) {
+            this.idleAnimationState.stop();
+        }
     }
 
     public boolean isPanicked() {
@@ -126,6 +138,7 @@ public class SnailEntity extends Animal {
             this.goalSelector.addGoal(6, new LookAtPlayerGoal(this, Player.class, 6.0F));
         }
     }
+
 
     @Override
     public void tick() {
@@ -177,6 +190,38 @@ public class SnailEntity extends Animal {
             this.setPanicked(true);
         }
     }
+
+
+    @Override
+    public boolean checkSpawnRules(LevelAccessor pLevel, MobSpawnType pSpawnType) {
+        ResourceKey<Biome> biomeKey = pLevel.getBiome(this.blockPosition()).unwrapKey().orElse(null);
+        if (biomeKey == null || !biomeKey.equals(ModBiomes.WALNUT_BIOME)) {
+            return false;
+        }
+
+        BlockState blockBelow = pLevel.getBlockState(this.blockPosition().below());
+        if (!blockBelow.isSolid()) {
+            return false;
+        }
+
+        // Ensure sufficient light level (e.g., >7 for daytime spawning)
+        if (pLevel.getLightEmission(this.blockPosition()) <= 7) {
+            return false;
+        }
+
+        return super.checkSpawnRules(pLevel, pSpawnType);
+    }
+
+    @Override
+    public SpawnGroupData finalizeSpawn(ServerLevelAccessor pLevel, DifficultyInstance pDifficulty,
+                                        MobSpawnType pSpawnType, @Nullable SpawnGroupData pSpawnGroupData) {
+        ResourceKey<Biome> biomeKey = pLevel.getBiome(this.blockPosition()).unwrapKey().orElse(null);
+        if (biomeKey != null && biomeKey.equals(ModBiomes.WALNUT_BIOME)) {
+        }
+
+        return super.finalizeSpawn(pLevel, pDifficulty, pSpawnType, pSpawnGroupData);
+    }
+
 
     @Nullable
     @Override

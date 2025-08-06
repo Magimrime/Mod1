@@ -35,19 +35,17 @@ public class SnailAnimations {
                             new Keyframe(2.33333f, KeyframeAnimations.posVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
     public static final AnimationDefinition CURL = AnimationDefinition.Builder.withLength(1.04167f)
-            .addAnimation("head",
+            .addAnimation("FullHead",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
                             new Keyframe(0f, KeyframeAnimations.posVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR),
-                            new Keyframe(0.125f, KeyframeAnimations.posVec(0f, -2f, 4f),
+                            new Keyframe(0.125f, KeyframeAnimations.posVec(0f, -2f, 2f),
+                                    AnimationChannel.Interpolations.LINEAR),
+                            new Keyframe(0.83333f, KeyframeAnimations.posVec(0f, 0f, 3f),
                                     AnimationChannel.Interpolations.LINEAR)))
-            .addAnimation("head",
+            .addAnimation("FullHead",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
                             new Keyframe(0f, KeyframeAnimations.degreeVec(0f, 0f, 0f),
-                                    AnimationChannel.Interpolations.LINEAR),
-                            new Keyframe(0.41667f, KeyframeAnimations.degreeVec(180f, 0f, 0f),
-                                    AnimationChannel.Interpolations.LINEAR),
-                            new Keyframe(0.83333f, KeyframeAnimations.degreeVec(360f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR)))
             .addAnimation("Middle",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
@@ -72,10 +70,6 @@ public class SnailAnimations {
             .addAnimation("body",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
                             new Keyframe(0f, KeyframeAnimations.degreeVec(0f, 0f, 0f),
-                                    AnimationChannel.Interpolations.LINEAR),
-                            new Keyframe(0.41667f, KeyframeAnimations.degreeVec(-180f, 0f, 0f),
-                                    AnimationChannel.Interpolations.LINEAR),
-                            new Keyframe(0.83333f, KeyframeAnimations.degreeVec(-360f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR)))
             .addAnimation("Shell",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
@@ -84,9 +78,9 @@ public class SnailAnimations {
                             new Keyframe(0.41667f, KeyframeAnimations.posVec(0f, -1f, 0f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
     public static final AnimationDefinition PEEK = AnimationDefinition.Builder.withLength(1f)
-            .addAnimation("head",
+            .addAnimation("FullHead",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
-                            new Keyframe(0f, KeyframeAnimations.posVec(0f, -1f, 4f),
+                            new Keyframe(0f, KeyframeAnimations.posVec(0f, -4f, 2f),
                                     AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(1f, KeyframeAnimations.posVec(0f, 1f, 0.45f),
                                     AnimationChannel.Interpolations.LINEAR)))
@@ -113,16 +107,14 @@ public class SnailAnimations {
                             new Keyframe(1f, KeyframeAnimations.degreeVec(-12.5f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR))).build();
     public static final AnimationDefinition UNCURL = AnimationDefinition.Builder.withLength(1.25f)
-            .addAnimation("head",
+            .addAnimation("FullHead",
                     new AnimationChannel(AnimationChannel.Targets.POSITION,
-                            new Keyframe(0f, KeyframeAnimations.posVec(0f, -2f, 4f),
+                            new Keyframe(0f, KeyframeAnimations.posVec(0f, -4f, 2f),
                                     AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(1.25f, KeyframeAnimations.posVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR)))
-            .addAnimation("head",
+            .addAnimation("FullHead",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
-                            new Keyframe(0f, KeyframeAnimations.degreeVec(360f, 0f, 0f),
-                                    AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(1.25f, KeyframeAnimations.degreeVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR)))
             .addAnimation("Tail",
@@ -145,8 +137,6 @@ public class SnailAnimations {
                                     AnimationChannel.Interpolations.LINEAR)))
             .addAnimation("body",
                     new AnimationChannel(AnimationChannel.Targets.ROTATION,
-                            new Keyframe(0f, KeyframeAnimations.degreeVec(-360f, 0f, 0f),
-                                    AnimationChannel.Interpolations.LINEAR),
                             new Keyframe(1.25f, KeyframeAnimations.degreeVec(0f, 0f, 0f),
                                     AnimationChannel.Interpolations.LINEAR)))
             .addAnimation("Shell",

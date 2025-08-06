@@ -14,6 +14,7 @@ import net.minecraftforge.common.world.ForgeBiomeModifiers;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.oliver.forgemod.ForgeMod;
 import net.oliver.forgemod.entity.ModEntities;
+import net.oliver.forgemod.worldgen.biome.ModBiomes;
 
 import java.util.List;
 
@@ -27,7 +28,7 @@ public class ModBiomeModifiers {
         var biomes = context.lookup(Registries.BIOME);
 
         context.register(ADD_WALNUT_TREE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                HolderSet.direct(biomes.getOrThrow(Biomes.PLAINS), biomes.getOrThrow(Biomes.SAVANNA)),
+                HolderSet.direct(biomes.getOrThrow(ModBiomes.WALNUT_BIOME)),
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.WALNUT_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
 

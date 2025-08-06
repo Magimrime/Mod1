@@ -14,7 +14,7 @@ import net.oliver.forgemod.entity.custom.SnailEntity;
 
 public class SnailModel<T extends SnailEntity> extends HierarchicalModel<T> {
     public static final ModelLayerLocation LAYER_LOCATION =
-            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID, "snail"), "main");
+            new ModelLayerLocation(ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID, "dirtsnail"), "main");
     private final ModelPart FullBody;
     private final ModelPart Middle;
 
@@ -71,13 +71,37 @@ public class SnailModel<T extends SnailEntity> extends HierarchicalModel<T> {
     @Override
     public void setupAnim(SnailEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
         this.root().getAllParts().forEach(ModelPart::resetPose);
-        this.applyHeadRotation(netHeadYaw, headPitch);
+        
+        // Only apply head rotation if not curled
+        if (!entity.isPanicked()) {
+            this.applyHeadRotation(netHeadYaw, headPitch);
+        }
 
-        this.animateWalk(SnailAnimations.CRAWLING, limbSwing, limbSwingAmount, 2f, 2.5f);
+        // Only play walking animation if not curled
+        if (!entity.isPanicked()) {
+            this.animateWalk(SnailAnimations.CRAWLING, limbSwing, limbSwingAmount, 2f, 2.5f);
+        }
+        
+        // Handle curl animation
         this.animate(entity.curlAnimationState, SnailAnimations.CURL, ageInTicks, 1f);
+        
+        // Handle peek animation
         this.animate(entity.peekAnimationState, SnailAnimations.PEEK, ageInTicks, 1f);
+        
+        // Start uncurl animation when peek finishes (peek animation is 1 second = 20 ticks)
+        if (entity.peekAnimationState.isStarted() && entity.peekAnimationState.getAccumulatedTime() >= 20f) {
+            entity.peekAnimationState.stop();
+            entity.uncurlAnimationState.start(entity.tickCount);
+        }
+        
+        // Handle uncurl animation
         this.animate(entity.uncurlAnimationState, SnailAnimations.UNCURL, ageInTicks, 1f);
-        this.animate(entity.idleAnimationState, SnailAnimations.IDLE, ageInTicks, 1f);
+        
+        // Only play idle animation if not curled and no other animations are playing
+        if (!entity.isPanicked() && !entity.curlAnimationState.isStarted() && 
+            !entity.peekAnimationState.isStarted() && !entity.uncurlAnimationState.isStarted()) {
+            this.animate(entity.idleAnimationState, SnailAnimations.IDLE, ageInTicks, 1f);
+        }
     }
 
     private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch) {

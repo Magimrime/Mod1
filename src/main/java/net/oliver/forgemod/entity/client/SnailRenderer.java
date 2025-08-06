@@ -15,7 +15,7 @@ public class SnailRenderer extends MobRenderer<SnailEntity, SnailModel<SnailEnti
 
     @Override
     public ResourceLocation getTextureLocation(SnailEntity pEntity) {
-        return ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID,"textures/entity/dirtsnail/snail.png");
+        return ResourceLocation.fromNamespaceAndPath(ForgeMod.MOD_ID,"textures/entity/snail/dirtsnail.png");
     }
 
     @Override
