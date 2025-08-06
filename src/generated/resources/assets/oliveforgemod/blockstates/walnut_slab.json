@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oliveforgemod:block/walnut_slab"
+    },
+    "type=double": {
+      "model": "oliveforgemod:block/walnut_planks"
+    },
+    "type=top": {
+      "model": "oliveforgemod:block/walnut_slab_top"
+    }
+  }
+}

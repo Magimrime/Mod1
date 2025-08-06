@@ -139,7 +139,7 @@
         "type": "oliveforgemod:snail",
         "maxCount": 6,
         "minCount": 2,
-        "weight": 20
+        "weight": 100
       }
     ],
     "misc": [],

@@ -54,6 +54,31 @@ public class ModBlocks {
                 }
             });
 
+    public static final RegistryObject<StairBlock> WALNUT_STAIRS = registerBlock("walnut_stairs",
+            () -> new StairBlock(ModBlocks.WALNUT_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(2.0f, 2.0f)));
+
+    public static final RegistryObject<SlabBlock> WALNUT_SLAB = registerBlock("walnut_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(2.0f, 2.0f)));
+
+    public static final RegistryObject<PressurePlateBlock> WALNUT_PRESSURE_PLATE = registerBlock("walnut_pressure_plate",
+            () -> new PressurePlateBlock(BlockSetType.ACACIA, BlockBehaviour.Properties.of().strength(2.0f, 2.0f)));
+
+    public static final RegistryObject<ButtonBlock> WALNUT_BUTTON = registerBlock("walnut_button",
+            () -> new ButtonBlock(BlockSetType.ACACIA, 30, BlockBehaviour.Properties.of().strength(0.5f, 0.5f).noCollission()));
+
+    public static final RegistryObject<FenceBlock> WALNUT_FENCE = registerBlock("walnut_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.of().strength(2.0f, 2.0f)));
+
+    public static final RegistryObject<FenceGateBlock> WALNUT_FENCE_GATE = registerBlock("walnut_fence_gate",
+            () -> new FenceGateBlock(WoodType.ACACIA, BlockBehaviour.Properties.of().strength(2.0f, 2.0f)));
+
+    public static final RegistryObject<DoorBlock> WALNUT_DOOR = registerBlock("walnut_door",
+            () -> new DoorBlock(BlockSetType.ACACIA, BlockBehaviour.Properties.of().strength(2.0f, 2.0f).noOcclusion()));
+
+    public static final RegistryObject<TrapDoorBlock> WALNUT_TRAPDOOR = registerBlock("walnut_trapdoor",
+            () -> new TrapDoorBlock(BlockSetType.ACACIA, BlockBehaviour.Properties.of().strength(2.0f, 2.0f).noOcclusion()));
+
     public static final RegistryObject<Block> WALNUT_LEAVES = registerBlock("walnut_leaves",
             () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
                 @Override

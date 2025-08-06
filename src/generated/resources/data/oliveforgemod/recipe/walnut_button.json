@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "walnut",
+  "ingredients": [
+    {
+      "item": "oliveforgemod:walnut_planks"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "oliveforgemod:walnut_button"
+  }
+}

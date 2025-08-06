@@ -50,6 +50,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.WALNUT_PLANKS.get());
         this.dropSelf(ModBlocks.WALNUT_SAPLING.get());
 
+        // Wooden blocks that drop themselves
+        this.dropSelf(ModBlocks.WALNUT_STAIRS.get());
+        this.dropSelf(ModBlocks.WALNUT_SLAB.get());
+        this.dropSelf(ModBlocks.WALNUT_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.WALNUT_BUTTON.get());
+        this.dropSelf(ModBlocks.WALNUT_FENCE.get());
+        this.dropSelf(ModBlocks.WALNUT_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.WALNUT_DOOR.get());
+        this.dropSelf(ModBlocks.WALNUT_TRAPDOOR.get());
 
         this.add(ModBlocks.WALNUT_LEAVES.get(), block ->
                 createWalnutLeavesDrops(block, ModBlocks.WALNUT_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));

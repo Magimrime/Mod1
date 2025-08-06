@@ -30,6 +30,18 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.WALNUT_PLANKS.get());
                         output.accept(ModBlocks.WALNUT_SAPLING.get());
 
+                        output.accept(ModBlocks.WALNUT_STAIRS.get());
+                        output.accept(ModBlocks.WALNUT_SLAB.get());
+
+                        output.accept(ModBlocks.WALNUT_PRESSURE_PLATE.get());
+                        output.accept(ModBlocks.WALNUT_BUTTON.get());
+
+                        output.accept(ModBlocks.WALNUT_FENCE.get());
+                        output.accept(ModBlocks.WALNUT_FENCE_GATE.get());
+
+                        output.accept(ModBlocks.WALNUT_DOOR.get());
+                        output.accept(ModBlocks.WALNUT_TRAPDOOR.get());
+
                         output.accept(ModItems.SNAIL_SPAWN_EGG.get());
                     }).build());
 

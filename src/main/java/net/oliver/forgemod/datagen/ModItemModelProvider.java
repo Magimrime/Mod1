@@ -50,6 +50,11 @@ public class ModItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         basicItem(ModItems.WALNUT.get());
         saplingItem(ModBlocks.WALNUT_SAPLING);
+
+        buttonItem(ModBlocks.WALNUT_BUTTON, ModBlocks.WALNUT_PLANKS);
+        fenceItem(ModBlocks.WALNUT_FENCE, ModBlocks.WALNUT_PLANKS);
+
+        simpleBlockItem(ModBlocks.WALNUT_DOOR);
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {

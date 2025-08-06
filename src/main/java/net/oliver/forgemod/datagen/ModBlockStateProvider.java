@@ -24,17 +24,38 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        // Create basic block models first
+        blockWithItem(ModBlocks.WALNUT_PLANKS);
+        
         logBlock(ModBlocks.WALNUT_LOG.get());
         axisBlock(ModBlocks.WALNUT_WOOD.get(), blockTexture(ModBlocks.WALNUT_LOG.get()), blockTexture(ModBlocks.WALNUT_LOG.get()));
         logBlock(ModBlocks.STRIPPED_WALNUT_LOG.get());
         axisBlock(ModBlocks.STRIPPED_WALNUT_WOOD.get(), blockTexture(ModBlocks.STRIPPED_WALNUT_LOG.get()), blockTexture(ModBlocks.STRIPPED_WALNUT_LOG.get()));
 
+        // Now create derived blocks that reference the basic blocks
+        stairsBlock(ModBlocks.WALNUT_STAIRS.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
+        slabBlock(ModBlocks.WALNUT_SLAB.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
+
+        buttonBlock(ModBlocks.WALNUT_BUTTON.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
+        pressurePlateBlock(ModBlocks.WALNUT_PRESSURE_PLATE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
+
+        fenceBlock(ModBlocks.WALNUT_FENCE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
+        fenceGateBlock(ModBlocks.WALNUT_FENCE_GATE.get(), blockTexture(ModBlocks.WALNUT_PLANKS.get()));
+
+        doorBlockWithRenderType(ModBlocks.WALNUT_DOOR.get(), modLoc("block/walnut_door_bottom"), modLoc("block/walnut_door_top"), "cutout");
+        trapdoorBlockWithRenderType(ModBlocks.WALNUT_TRAPDOOR.get(), modLoc("block/walnut_trapdoor"), true, "cutout");
+
+        // Create item models for blocks
+        blockItem(ModBlocks.WALNUT_STAIRS);
+        blockItem(ModBlocks.WALNUT_SLAB);
+        blockItem(ModBlocks.WALNUT_PRESSURE_PLATE);
+        blockItem(ModBlocks.WALNUT_FENCE_GATE);
+        blockItem(ModBlocks.WALNUT_TRAPDOOR, "_bottom");
+
         blockItem(ModBlocks.WALNUT_LOG);
         blockItem(ModBlocks.WALNUT_WOOD);
         blockItem(ModBlocks.STRIPPED_WALNUT_LOG);
         blockItem(ModBlocks.STRIPPED_WALNUT_WOOD);
-
-        blockWithItem(ModBlocks.WALNUT_PLANKS);
 
         leavesBlock(ModBlocks.WALNUT_LEAVES);
         saplingBlock(ModBlocks.WALNUT_SAPLING);

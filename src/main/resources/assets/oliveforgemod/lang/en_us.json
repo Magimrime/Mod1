@@ -12,5 +12,17 @@
   "terrablender_deferred_placeholder": "walnut_forest",
   "creativetab.oliveforgemod.walnut": "Walnuts",
 
+  "block.oliveforgemod.walnut_stairs": "Walnut Stairs",
+  "block.oliveforgemod.walnut_slab": "Walnut Slab",
+
+  "block.oliveforgemod.walnut_button": "Walnut Button",
+  "block.oliveforgemod.walnut_pressure_plate": "Walnut Pressure Plate",
+
+  "block.oliveforgemod.walnut_fence": "Walnut Fence",
+  "block.oliveforgemod.walnut_fence_gate": "Walnut Fence Gate",
+
+  "block.oliveforgemod.walnut_door": "Walnut Door",
+  "block.oliveforgemod.walnut_trapdoor": "Walnut Trapdoor",
+
   "item.oliveforgemod.snail_spawn_egg": "Snail Spawn Egg"
 }
