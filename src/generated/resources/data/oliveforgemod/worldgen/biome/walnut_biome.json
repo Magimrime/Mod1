@@ -134,6 +134,12 @@
         "maxCount": 3,
         "minCount": 1,
         "weight": 1
+      },
+      {
+        "type": "oliveforgemod:snail",
+        "maxCount": 6,
+        "minCount": 2,
+        "weight": 20
       }
     ],
     "misc": [],

@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "oliveforgemod:walnut_biome",
+  "biomes": "minecraft:the_void",
   "features": "oliveforgemod:walnut_placed",
   "step": "vegetal_decoration"
 }

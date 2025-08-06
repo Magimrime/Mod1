@@ -1,0 +1,65 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "runClient",
+      "request": "launch",
+      "mainClass": "net.minecraftforge.bootstrap.ForgeBootstrap",
+      "projectName": "V1",
+      "cwd": "${workspaceFolder}\\run",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dREGISTRIES -Dmixin.env.remapRefMap\u003dtrue \"-Dmixin.env.refMapRemappingFile\u003dD:\\My Forge Mod\\Mods\\Walnut Mod\\V1/build/createSrgToMcp/output.srg\" \"-Dnet.minecraftforge.gradle.GradleStart.srg.srg-mcp\u003dD:\\My Forge Mod\\Mods\\Walnut Mod\\V1\\build\\createSrgToMcp\\output.srg\" -Dforge.enabledGameTestNamespaces\u003doliveforgemod -Dforge.enableGameTest\u003dtrue -Djava.net.preferIPv6Addresses\u003dsystem -XX:HeapDumpPath\u003dMojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump",
+      "args": "--launchTarget forge_userdev_client --version MOD_DEV --assetIndex 17 --assetsDir C:\\Users\\olive\\.gradle\\caches\\forge_gradle\\assets --gameDir .",
+      "env": {
+        "MOD_CLASSES": "${workspaceFolder}\\build\\sourcesSets\\main",
+        "MCP_MAPPINGS": "parchment_2024.07.28-1.21"
+      },
+      "preLaunchTask": "prepareRunClientCompile"
+    },
+    {
+      "type": "java",
+      "name": "runData",
+      "request": "launch",
+      "mainClass": "net.minecraftforge.bootstrap.ForgeBootstrap",
+      "projectName": "V1",
+      "cwd": "${workspaceFolder}\\run-data",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dREGISTRIES -Dmixin.env.remapRefMap\u003dtrue \"-Dmixin.env.refMapRemappingFile\u003dD:\\My Forge Mod\\Mods\\Walnut Mod\\V1/build/createSrgToMcp/output.srg\" \"-Dnet.minecraftforge.gradle.GradleStart.srg.srg-mcp\u003dD:\\My Forge Mod\\Mods\\Walnut Mod\\V1\\build\\createSrgToMcp\\output.srg\" -Djava.net.preferIPv6Addresses\u003dsystem",
+      "args": "--launchTarget forge_userdev_data --assetIndex 17 --assetsDir C:\\Users\\olive\\.gradle\\caches\\forge_gradle\\assets --gameDir . --mod oliveforgemod --all --output \"D:\\My Forge Mod\\Mods\\Walnut Mod\\V1\\src\\generated\\resources\" --existing \"D:\\My Forge Mod\\Mods\\Walnut Mod\\V1\\src\\main\\resources\"",
+      "env": {
+        "MOD_CLASSES": "${workspaceFolder}\\build\\sourcesSets\\main",
+        "MCP_MAPPINGS": "parchment_2024.07.28-1.21"
+      },
+      "preLaunchTask": "prepareRunDataCompile"
+    },
+    {
+      "type": "java",
+      "name": "runGameTestServer",
+      "request": "launch",
+      "mainClass": "net.minecraftforge.bootstrap.ForgeBootstrap",
+      "projectName": "V1",
+      "cwd": "${workspaceFolder}\\run",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dREGISTRIES -Dmixin.env.remapRefMap\u003dtrue \"-Dmixin.env.refMapRemappingFile\u003dD:\\My Forge Mod\\Mods\\Walnut Mod\\V1/build/createSrgToMcp/output.srg\" \"-Dnet.minecraftforge.gradle.GradleStart.srg.srg-mcp\u003dD:\\My Forge Mod\\Mods\\Walnut Mod\\V1\\build\\createSrgToMcp\\output.srg\" -Dforge.enabledGameTestNamespaces\u003doliveforgemod -Djava.net.preferIPv6Addresses\u003dsystem",
+      "args": "--launchTarget forge_userdev_server_gametest --gameDir .",
+      "env": {
+        "MOD_CLASSES": "${workspaceFolder}\\build\\sourcesSets\\main",
+        "MCP_MAPPINGS": "parchment_2024.07.28-1.21"
+      },
+      "preLaunchTask": "prepareRunGameTestServerCompile"
+    },
+    {
+      "type": "java",
+      "name": "runServer",
+      "request": "launch",
+      "mainClass": "net.minecraftforge.bootstrap.ForgeBootstrap",
+      "projectName": "V1",
+      "cwd": "${workspaceFolder}\\run",
+      "vmArgs": "-Dforge.logging.console.level\u003ddebug -Dforge.logging.markers\u003dREGISTRIES -Dmixin.env.remapRefMap\u003dtrue \"-Dmixin.env.refMapRemappingFile\u003dD:\\My Forge Mod\\Mods\\Walnut Mod\\V1/build/createSrgToMcp/output.srg\" \"-Dnet.minecraftforge.gradle.GradleStart.srg.srg-mcp\u003dD:\\My Forge Mod\\Mods\\Walnut Mod\\V1\\build\\createSrgToMcp\\output.srg\" -Dforge.enabledGameTestNamespaces\u003doliveforgemod -Dforge.enableGameTest\u003dtrue -Djava.net.preferIPv6Addresses\u003dsystem",
+      "args": "--launchTarget forge_userdev_server --gameDir . --nogui",
+      "env": {
+        "MOD_CLASSES": "${workspaceFolder}\\build\\sourcesSets\\main",
+        "MCP_MAPPINGS": "parchment_2024.07.28-1.21"
+      },
+      "preLaunchTask": "prepareRunServerCompile"
+    }
+  ]
+}

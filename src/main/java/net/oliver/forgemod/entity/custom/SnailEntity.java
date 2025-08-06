@@ -21,6 +21,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.level.ServerLevelAccessor;
 import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.fml.common.Mod;
 import net.oliver.forgemod.entity.ModEntities;
@@ -191,24 +192,20 @@ public class SnailEntity extends Animal {
         }
     }
 
-
     @Override
     public boolean checkSpawnRules(LevelAccessor pLevel, MobSpawnType pSpawnType) {
         ResourceKey<Biome> biomeKey = pLevel.getBiome(this.blockPosition()).unwrapKey().orElse(null);
         if (biomeKey == null || !biomeKey.equals(ModBiomes.WALNUT_BIOME)) {
-            return false;
+            return false; // Only spawn in WALNUT_BIOME
         }
 
+        // Require grass block below, like cows and sheep
         BlockState blockBelow = pLevel.getBlockState(this.blockPosition().below());
-        if (!blockBelow.isSolid()) {
+        if (!blockBelow.is(Blocks.GRASS_BLOCK)) {
             return false;
         }
 
-        // Ensure sufficient light level (e.g., >7 for daytime spawning)
-        if (pLevel.getLightEmission(this.blockPosition()) <= 7) {
-            return false;
-        }
-
+        // Use default animal spawn rules (light level > 7, no collision)
         return super.checkSpawnRules(pLevel, pSpawnType);
     }
 

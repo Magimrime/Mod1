@@ -12,6 +12,7 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.level.biome.*;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.oliver.forgemod.ForgeMod;
+import net.oliver.forgemod.entity.ModEntities;
 import net.oliver.forgemod.worldgen.ModPlacedFeatures;
 
 public class ModBiomes {
@@ -37,7 +38,7 @@ public class ModBiomes {
         BiomeDefaultFeatures.farmAnimals(spawnBuilder); // Sheep, pigs, chickens, cows
         spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.HORSE, 5, 2, 6));
         spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.DONKEY, 1, 1, 3));
-        BiomeDefaultFeatures.commonSpawns(spawnBuilder); // Zombies, skeletons, etc.
+        spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.SNAIL.get(), 20, 2, 6));        BiomeDefaultFeatures.commonSpawns(spawnBuilder); // Zombies, skeletons, etc.
 
         // Generation settings (mimic Plains)
         BiomeGenerationSettings.Builder biomeBuilder =
