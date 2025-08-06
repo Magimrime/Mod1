@@ -209,16 +209,6 @@ public class SnailEntity extends Animal {
         return super.checkSpawnRules(pLevel, pSpawnType);
     }
 
-    @Override
-    public SpawnGroupData finalizeSpawn(ServerLevelAccessor pLevel, DifficultyInstance pDifficulty,
-                                        MobSpawnType pSpawnType, @Nullable SpawnGroupData pSpawnGroupData) {
-        ResourceKey<Biome> biomeKey = pLevel.getBiome(this.blockPosition()).unwrapKey().orElse(null);
-        if (biomeKey != null && biomeKey.equals(ModBiomes.WALNUT_BIOME)) {
-        }
-
-        return super.finalizeSpawn(pLevel, pDifficulty, pSpawnType, pSpawnGroupData);
-    }
-
 
     @Nullable
     @Override

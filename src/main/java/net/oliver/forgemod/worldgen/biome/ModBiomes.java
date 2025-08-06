@@ -38,7 +38,8 @@ public class ModBiomes {
         BiomeDefaultFeatures.farmAnimals(spawnBuilder); // Sheep, pigs, chickens, cows
         spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.HORSE, 5, 2, 6));
         spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(EntityType.DONKEY, 1, 1, 3));
-        spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.SNAIL.get(), 20, 2, 6));        BiomeDefaultFeatures.commonSpawns(spawnBuilder); // Zombies, skeletons, etc.
+        spawnBuilder.addSpawn(MobCategory.CREATURE, new MobSpawnSettings.SpawnerData(ModEntities.SNAIL.get(), 100, 2, 6));
+        BiomeDefaultFeatures.commonSpawns(spawnBuilder); // Zombies, skeletons, etc.
 
         // Generation settings (mimic Plains)
         BiomeGenerationSettings.Builder biomeBuilder =

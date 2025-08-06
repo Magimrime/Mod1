@@ -31,12 +31,6 @@ public class ModBiomeModifiers {
                 HolderSet.direct(biomes.getOrThrow(Biomes.THE_VOID)),
                 HolderSet.direct(placedFeature.getOrThrow(ModPlacedFeatures.WALNUT_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
-
-        // Single snail spawner for all overworld biomes
-        context.register(SPAWN_DIRT_SNAIL, new ForgeBiomeModifiers.AddSpawnsBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                List.of(new MobSpawnSettings.SpawnerData(ModEntities.SNAIL.get(), 50, 4, 7))
-        ));
     }
 
     private static ResourceKey<BiomeModifier> registerKey(String name) {
