@@ -1,8 +1,8 @@
-// 1.21	2025-08-06T14:36:10.0619638	Loot Tables
+// 1.21	2025-08-06T19:04:35.596468	Loot Tables
 269a9eb139b515a44b903155583493a9b3c54ef7 data/oliveforgemod/loot_table/blocks/stripped_walnut_log.json
 e4d09cb3f070b52b0c0f3f24cc9f94f6dfb89109 data/oliveforgemod/loot_table/blocks/stripped_walnut_wood.json
 4b459d7f12d90f7b3e20f369a54769667269052d data/oliveforgemod/loot_table/blocks/walnut_button.json
-75cc56f086248892168caf17a3d5be478400c762 data/oliveforgemod/loot_table/blocks/walnut_door.json
+75133ec5fcb37dd27bad87c7a61e2a62d9dfaf56 data/oliveforgemod/loot_table/blocks/walnut_door.json
 7cd42d6940a51a14a151763bef27333fbfba71b4 data/oliveforgemod/loot_table/blocks/walnut_fence.json
 177a71cfea7ea04afe18971624bfeb00e75be6da data/oliveforgemod/loot_table/blocks/walnut_fence_gate.json
 b39dcf8a46a27dd992c18b3c7deaa59bb5778c19 data/oliveforgemod/loot_table/blocks/walnut_leaves.json
