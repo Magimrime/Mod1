@@ -14,13 +14,13 @@ import java.util.function.Consumer;
 
 public class ModOverworldRegion extends Region {
     public ModOverworldRegion(ResourceLocation name) {
-        super(name, RegionType.OVERWORLD, 10);
+        super(name, RegionType.OVERWORLD, 5);
     }
 
     @Override
     public void addBiomes(Registry<Biome> registry, Consumer<Pair<Climate.ParameterPoint, ResourceKey<Biome>>> mapper) {
         this.addModifiedVanillaOverworldBiomes(mapper, modifiedVanillaOverworldBuilder -> {
-            modifiedVanillaOverworldBuilder.replaceBiome(Biomes.FOREST, ModBiomes.WALNUT_BIOME);
+            modifiedVanillaOverworldBuilder.replaceBiome(Biomes.SAVANNA, ModBiomes.WALNUT_BIOME);
         });
     }
 }
