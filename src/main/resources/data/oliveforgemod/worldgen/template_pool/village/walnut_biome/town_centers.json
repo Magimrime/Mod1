@@ -23,7 +23,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/town_centers/walnutf_meeting_point_3",
+        "location": "oliveforgemod:village/walnut_biome/town_centers/walnut_meeting_point_3",
         "processors": "minecraft:mossify_70_percent",
         "projection": "rigid"
       },

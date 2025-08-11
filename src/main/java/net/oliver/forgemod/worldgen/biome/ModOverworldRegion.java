@@ -14,7 +14,7 @@ import java.util.function.Consumer;
 
 public class ModOverworldRegion extends Region {
     public ModOverworldRegion(ResourceLocation name) {
-        super(name, RegionType.OVERWORLD, 5);
+        super(name, RegionType.OVERWORLD, 10);
     }
 
     @Override
