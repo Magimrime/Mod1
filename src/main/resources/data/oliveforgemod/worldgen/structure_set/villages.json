@@ -7,6 +7,26 @@
   },
   "structures": [
     {
+      "structure": "minecraft:village_plains",
+      "weight": 1
+    },
+    {
+      "structure": "minecraft:village_desert",
+      "weight": 1
+    },
+    {
+      "structure": "minecraft:village_savanna",
+      "weight": 1
+    },
+    {
+      "structure": "minecraft:village_snowy",
+      "weight": 1
+    },
+    {
+      "structure": "minecraft:village_taiga",
+      "weight": 1
+    },
+    {
       "structure": "oliveforgemod:village_walnut",
       "weight": 1
     }

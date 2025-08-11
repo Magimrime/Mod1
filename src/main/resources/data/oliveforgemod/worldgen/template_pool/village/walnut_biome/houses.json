@@ -3,7 +3,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/small_house_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_small_house_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -12,7 +12,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/small_house_2",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_small_house_2",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -21,7 +21,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/small_house_3",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_small_house_3",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -30,7 +30,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/small_house_4",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_small_house_4",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -39,7 +39,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/small_house_5",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_small_house_5",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -48,7 +48,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/small_house_6",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_small_house_6",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -57,7 +57,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/small_house_7",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_small_house_7",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -66,7 +66,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/small_house_8",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_small_house_8",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -75,7 +75,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/medium_house_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_medium_house_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -84,7 +84,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/medium_house_2",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_medium_house_2",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -93,7 +93,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/big_house_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_big_house_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -102,7 +102,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/butcher_shop_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_butcher_shop_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -111,7 +111,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/butcher_shop_2",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_butcher_shop_2",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -120,7 +120,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/tool_smith_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_tool_smith_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -129,7 +129,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/fletcher_house_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_fletcher_house_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -138,7 +138,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/shepherds_house_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_shepherds_house_1",
         "processors": {
           "processors": []
         },
@@ -149,7 +149,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/armorer_house_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_armorer_house_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -158,7 +158,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/fisher_cottage_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_fisher_cottage_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -167,7 +167,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/tannery_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_tannery_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -176,7 +176,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/cartographer_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_cartographer_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -185,7 +185,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/library_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_library_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -194,7 +194,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/library_2",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_library_2",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -203,7 +203,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/masons_house_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_masons_house_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -212,7 +212,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/weaponsmith_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_weaponsmith_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -221,7 +221,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/temple_3",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_temple_3",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -230,7 +230,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/temple_4",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_temple_4",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -239,7 +239,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/stable_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_stable_1",
         "processors": "minecraft:mossify_10_percent",
         "projection": "rigid"
       },
@@ -248,7 +248,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/stable_2",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_stable_2",
         "processors": {
           "processors": []
         },
@@ -259,7 +259,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/large_farm_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_large_farm_1",
         "processors": "minecraft:farm_plains",
         "projection": "rigid"
       },
@@ -268,7 +268,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/small_farm_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_small_farm_1",
         "processors": "minecraft:farm_plains",
         "projection": "rigid"
       },
@@ -277,7 +277,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/animal_pen_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_animal_pen_1",
         "processors": {
           "processors": []
         },
@@ -288,7 +288,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/animal_pen_2",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_animal_pen_2",
         "processors": {
           "processors": []
         },
@@ -299,7 +299,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/animal_pen_3",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_animal_pen_3",
         "processors": {
           "processors": []
         },
@@ -310,7 +310,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/accessory_1",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_accessory_1",
         "processors": {
           "processors": []
         },
@@ -321,7 +321,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/meeting_point_4",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_meeting_point_4",
         "processors": "minecraft:mossify_70_percent",
         "projection": "rigid"
       },
@@ -330,7 +330,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "oliveforgemod:village/walnut_biome/houses/meeting_point_5",
+        "location": "oliveforgemod:village/walnut_biome/houses/walnut_meeting_point_5",
         "processors": {
           "processors": []
         },
