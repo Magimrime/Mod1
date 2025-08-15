@@ -62,7 +62,7 @@ repositories {
 }
 
 dependencies {
-    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}" // e.g., 1.21-47.3.12
+    minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
     // Use Forge version of TerraBlender (fix Fabric dependency)
     implementation fg.deobf("com.github.glitchfiend:TerraBlender-forge:${minecraft_version}-${terrablender_version}") // e.g., 1.21-6.0.0.3

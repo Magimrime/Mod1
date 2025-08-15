@@ -3,7 +3,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/jungle/villagers/nitwit",
+        "location": "oliveforgemod:village/walnut_biome/villagers/nitwit",
         "processors": {
           "processors": []
         },
@@ -14,7 +14,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/jungle/villagers/baby",
+        "location": "oliveforgemod:village/walnut_biome/villagers/baby",
         "processors": {
           "processors": []
         },
@@ -25,7 +25,7 @@
     {
       "element": {
         "element_type": "minecraft:legacy_single_pool_element",
-        "location": "minecraft:village/jungle/villagers/unemployed",
+        "location": "oliveforgemod:village/walnut_biome/villagers/unemployed",
         "processors": {
           "processors": []
         },
