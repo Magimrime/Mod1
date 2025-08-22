@@ -2,7 +2,10 @@ package net.oliver.forgemod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.entity.EntityRenderers;
+import net.minecraft.core.Holder;
+import net.minecraft.world.entity.npc.VillagerType;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraft.world.level.levelgen.SurfaceRules;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,12 +27,11 @@ import net.oliver.forgemod.effect.ModEffects;
 import net.oliver.forgemod.enchantment.ModEnchantmentEffect;
 import net.oliver.forgemod.entity.ModEntities;
 import net.oliver.forgemod.entity.client.SnailRenderer;
+import net.oliver.forgemod.entity.npc.WalnutVillager;
 import net.oliver.forgemod.item.ModCreativeModeTabs;
 import net.oliver.forgemod.item.ModItems;
 import net.oliver.forgemod.loot.ModLootModifiers;
 import net.oliver.forgemod.potion.ModPotions;
-import net.oliver.forgemod.sound.ModSounds;
-import net.oliver.forgemod.util.ModItemProperties;
 import net.oliver.forgemod.worldgen.biome.ModTerrablender;
 import net.oliver.forgemod.worldgen.biome.surface.ModSurfaceRules;
 import org.slf4j.Logger;
@@ -53,7 +55,6 @@ public class ForgeMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        ModSounds.register(modEventBus);
 
         ModEffects.register(modEventBus);
         ModPotions.register(modEventBus);
@@ -99,7 +100,6 @@ public class ForgeMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            ModItemProperties.addCustomItemProperties();
 
             EntityRenderers.register(ModEntities.SNAIL.get(), SnailRenderer::new);
         }

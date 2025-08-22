@@ -9,10 +9,7 @@ import net.minecraft.world.item.JukeboxSong;
 import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.oliver.forgemod.ForgeMod;
-import net.oliver.forgemod.enchantment.ModEnchantments;
-import net.oliver.forgemod.sound.ModSounds;
-import net.oliver.forgemod.trim.ModTrimMaterials;
-import net.oliver.forgemod.trim.ModTrimPatterns;
+
 import net.oliver.forgemod.worldgen.ModBiomeModifiers;
 import net.oliver.forgemod.worldgen.ModConfiguredFeatures;
 import net.oliver.forgemod.worldgen.ModPlacedFeatures;
