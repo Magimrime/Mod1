@@ -12,6 +12,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.oliver.forgemod.ForgeMod;
 import net.oliver.forgemod.entity.ModEntities;
+import net.oliver.forgemod.entity.client.ModVillagerModel;
 import net.oliver.forgemod.entity.client.SnailModel;
 import net.oliver.forgemod.entity.custom.SnailEntity;
 
@@ -20,6 +21,7 @@ public class ModEventBusEvents {
     @SubscribeEvent
     public static void registerLayers(EntityRenderersEvent.RegisterLayerDefinitions event) {
         event.registerLayerDefinition(SnailModel.LAYER_LOCATION, SnailModel::createBodyLayer);
+        event.registerLayerDefinition(ModVillagerModel.LAYER_LOCATION, ModVillagerModel::createBodyLayer);
     }
 
     @SubscribeEvent

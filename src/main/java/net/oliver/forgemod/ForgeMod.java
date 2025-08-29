@@ -4,7 +4,6 @@ import com.mojang.logging.LogUtils;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.level.block.ComposterBlock;
-import net.minecraft.world.level.levelgen.SurfaceRules;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.common.MinecraftForge;
@@ -20,16 +19,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.oliver.forgemod.block.ModBlocks;
 import net.oliver.forgemod.block.entity.ModBlockEntities;
-import net.oliver.forgemod.effect.ModEffects;
-import net.oliver.forgemod.enchantment.ModEnchantmentEffect;
 import net.oliver.forgemod.entity.ModEntities;
 import net.oliver.forgemod.entity.client.SnailRenderer;
+import net.oliver.forgemod.entity.client.ModVillagerRenderer;
+import net.oliver.forgemod.init.EntityInit;
 import net.oliver.forgemod.item.ModCreativeModeTabs;
 import net.oliver.forgemod.item.ModItems;
 import net.oliver.forgemod.loot.ModLootModifiers;
-import net.oliver.forgemod.potion.ModPotions;
 import net.oliver.forgemod.sound.ModSounds;
-import net.oliver.forgemod.util.ModItemProperties;
 import net.oliver.forgemod.worldgen.biome.ModTerrablender;
 import net.oliver.forgemod.worldgen.biome.surface.ModSurfaceRules;
 import org.slf4j.Logger;
@@ -44,6 +41,8 @@ public class ForgeMod {
     public static final Logger LOGGER = LogUtils.getLogger();
 
     public ForgeMod() {
+        EntityInit.REGISTRY.register(FMLJavaModLoadingContext.get().getModEventBus());
+
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
         //Register ourselves for server and other game events we are interested in
@@ -55,10 +54,6 @@ public class ForgeMod {
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
 
-        ModEffects.register(modEventBus);
-        ModPotions.register(modEventBus);
-
-        ModEnchantmentEffect.register(modEventBus);
         ModEntities.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
@@ -99,9 +94,8 @@ public class ForgeMod {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-            ModItemProperties.addCustomItemProperties();
-
             EntityRenderers.register(ModEntities.SNAIL.get(), SnailRenderer::new);
+            EntityRenderers.register(EntityInit.WALNUT_VILLAGER.get(), ModVillagerRenderer::new);
         }
 
         @SubscribeEvent

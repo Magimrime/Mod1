@@ -12,7 +12,6 @@ import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.oliver.forgemod.ForgeMod;
-import net.oliver.forgemod.potion.ModPotions;
 
 import java.util.HashSet;
 import java.util.Set;

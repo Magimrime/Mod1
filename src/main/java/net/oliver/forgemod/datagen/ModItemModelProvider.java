@@ -19,7 +19,6 @@ import net.minecraftforge.registries.RegistryObject;
 import net.oliver.forgemod.ForgeMod;
 import net.oliver.forgemod.block.ModBlocks;
 import net.oliver.forgemod.item.ModItems;
-import net.oliver.forgemod.trim.ModTrimMaterials;
 
 import java.util.LinkedHashMap;
 

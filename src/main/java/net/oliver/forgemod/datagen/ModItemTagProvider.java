@@ -10,7 +10,6 @@ import net.minecraftforge.common.data.ExistingFileHelper;
 import net.oliver.forgemod.ForgeMod;
 import net.oliver.forgemod.block.ModBlocks;
 import net.oliver.forgemod.item.ModItems;
-import net.oliver.forgemod.util.ModTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
